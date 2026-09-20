@@ -1,0 +1,63 @@
+Chiến lược chunking: sentence
+Đã nạp 35 chunks vào store.
+
+Câu 1: Sản phẩm đổi ý có được mở seal/mở hộp không?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.175] - ID: buyer-bang-chung-va-dong-goi
+    Snippet: Quá trình mở kiện thấy rõ mã vận đơn. Quay cận cảnh số lượng và tình trạng sản phẩm bên trong. Dung ...
+  Top 2: [Score: 0.141] - ID: buyer-gui-yeu-cau-va-tra-loi
+    Snippet: Chọn lý do, phương án, điền thông tin mô tả và gửi bằng chứng ảnh/video. ## 2. Hướng dẫn trả lời đề ...
+  Top 3: [Score: 0.088] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: ## 2. Quy định hoàn Voucher/Xu Hoàn tiền ngay: Hoàn mã và Xu. Voucher Shopee Live, Video sẽ không đư...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 2: Người bán gửi sai hàng có được trả hàng không?
+Filter: None
+  Top 1: [Score: 0.278] - ID: seller-giai-quyet-tranh-chap
+    Snippet: Nếu ngoài khả năng, đưa vụ việc ra cơ quan chức năng....
+  Top 2: [Score: 0.234] - ID: seller-giai-quyet-tranh-chap
+    Snippet: Xử lý tranh chấp ngoài Trả hàng/Hoàn tiền Yêu cầu cung cấp tài liệu. Đưa ra hướng xử lý tối đa trong...
+  Top 3: [Score: 0.229] - ID: seller-meo-cung-cap-bang-chung
+    Snippet: Chứng minh hàng chính hãng: Hóa đơn GTGT, tờ khai hải quan, giấy chứng nhận đại lý....
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 3: Khẩu trang y tế có được trả hàng với lý do đổi ý không?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.236] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Top 2: [Score: 0.152] - ID: buyer-phuong-thuc-gui-hang
+    Snippet: # Các phương thức gửi hàng hoàn trả và phí hoàn trả  ## 1. Hình thức trả hàng Đơn vị vận chuyển đến ...
+  Top 3: [Score: 0.135] - ID: buyer-tra-hang-doi-y
+    Snippet: Sản phẩm không thuộc danh mục hạn chế. ## 2/ Những trường hợp không được hỗ trợ Sản phẩm là hàng điệ...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 4: Video mở kiện hàng cần quay mấy mặt của kiện hàng?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.343] - ID: buyer-bang-chung-va-dong-goi
+    Snippet: Quá trình mở kiện thấy rõ mã vận đơn. Quay cận cảnh số lượng và tình trạng sản phẩm bên trong. Dung ...
+  Top 2: [Score: 0.320] - ID: buyer-phuong-thuc-gui-hang
+    Snippet: Tự sắp xếp không thuộc Shopee Mall: Hoàn lại bằng Shopee Xu. Cùng tỉnh hoàn 25,000 Xu, khác tỉnh hoà...
+  Top 3: [Score: 0.132] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 5: Người bán có bao nhiêu ngày để trả hàng về kho?
+Filter: {'audience': 'seller'}
+  Top 1: [Score: 0.277] - ID: seller-quy-trinh-shopee-mall
+    Snippet: # Cập nhật Quy trình xử lý yêu cầu Trả hàng dành cho Shopee Mall  Nguồn: https://banhang.shopee.vn/e...
+  Top 2: [Score: 0.206] - ID: seller-giai-quyet-tranh-chap
+    Snippet: ## 2. Tạm giữ tiền Shopee sẽ tạm giữ khoản tiền hàng cần thanh toán cho đến khi giải quyết xong khiế...
+  Top 3: [Score: 0.173] - ID: seller-meo-cung-cap-bang-chung
+    Snippet: # Mẹo cung cấp bằng chứng khiếu nại cho Người bán  Nguồn: https://banhang.shopee.vn/edu/article/2505...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 6 [A/B TEST]: Người bán có bao nhiêu ngày để trả hàng về kho?
+Filter: None
+  Top 1: [Score: 0.303] - ID: buyer-gui-yeu-cau-va-tra-loi
+    Snippet: # Gửi yêu cầu và Trả lời đề xuất hoàn tiền ngay  Nguồn 1: https://help.shopee.vn/portal/4/article/79...
+  Top 2: [Score: 0.277] - ID: seller-quy-trinh-shopee-mall
+    Snippet: # Cập nhật Quy trình xử lý yêu cầu Trả hàng dành cho Shopee Mall  Nguồn: https://banhang.shopee.vn/e...
+  Top 3: [Score: 0.206] - ID: seller-giai-quyet-tranh-chap
+    Snippet: ## 2. Tạm giữ tiền Shopee sẽ tạm giữ khoản tiền hàng cần thanh toán cho đến khi giải quyết xong khiế...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+

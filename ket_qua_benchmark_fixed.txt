@@ -1,0 +1,63 @@
+Chiến lược chunking: fixed
+Đã nạp 19 chunks vào store.
+
+Câu 1: Sản phẩm đổi ý có được mở seal/mở hộp không?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.125] - ID: buyer-gui-yeu-cau-va-tra-loi
+    Snippet: # Gửi yêu cầu và Trả lời đề xuất hoàn tiền ngay  Nguồn 1: https://help.shopee.vn/portal/4/article/79...
+  Top 2: [Score: 0.093] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Top 3: [Score: 0.087] - ID: buyer-tra-hang-doi-y
+    Snippet:  là hàng điện tử đã được kích hoạt hoặc mất seal/tem bảo hành. Sản phẩm liên quan đến sức khỏe, vệ s...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 2: Người bán gửi sai hàng có được trả hàng không?
+Filter: None
+  Top 1: [Score: 0.378] - ID: seller-giai-quyet-tranh-chap
+    Snippet: /Hoàn tiền Yêu cầu cung cấp tài liệu. Đưa ra hướng xử lý tối đa trong 10 ngày làm việc. Nếu vụ việc ...
+  Top 2: [Score: 0.258] - ID: buyer-phuong-thuc-gui-hang
+    Snippet: # Các phương thức gửi hàng hoàn trả và phí hoàn trả  ## 1. Hình thức trả hàng Đơn vị vận chuyển đến ...
+  Top 3: [Score: 0.249] - ID: seller-tong-quan-va-faq
+    Snippet: # Tổng quan quản lý Trả hàng và FAQ cho Người bán  Nguồn 1: https://banhang.shopee.vn/edu/article/21...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 3: Khẩu trang y tế có được trả hàng với lý do đổi ý không?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.151] - ID: buyer-phuong-thuc-gui-hang
+    Snippet: # Các phương thức gửi hàng hoàn trả và phí hoàn trả  ## 1. Hình thức trả hàng Đơn vị vận chuyển đến ...
+  Top 2: [Score: 0.067] - ID: buyer-tra-hang-doi-y
+    Snippet:  là hàng điện tử đã được kích hoạt hoặc mất seal/tem bảo hành. Sản phẩm liên quan đến sức khỏe, vệ s...
+  Top 3: [Score: 0.062] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 4: Video mở kiện hàng cần quay mấy mặt của kiện hàng?
+Filter: {'audience': 'buyer'}
+  Top 1: [Score: 0.288] - ID: buyer-tra-hang-doi-y
+    Snippet: # Những điều cần biết về Trả hàng do "Đổi ý/không còn nhu cầu"  ## 1/ Trả hàng do "đổi ý/không còn n...
+  Top 2: [Score: 0.141] - ID: buyer-gui-yeu-cau-va-tra-loi
+    Snippet: # Gửi yêu cầu và Trả lời đề xuất hoàn tiền ngay  Nguồn 1: https://help.shopee.vn/portal/4/article/79...
+  Top 3: [Score: 0.100] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 5: Người bán có bao nhiêu ngày để trả hàng về kho?
+Filter: {'audience': 'seller'}
+  Top 1: [Score: 0.129] - ID: seller-giai-quyet-tranh-chap
+    Snippet: # Quy trình giải quyết tranh chấp khiếu nại Người bán  Nguồn: https://banhang.shopee.vn/edu/article/...
+  Top 2: [Score: 0.069] - ID: seller-giai-quyet-tranh-chap
+    Snippet: /Hoàn tiền Yêu cầu cung cấp tài liệu. Đưa ra hướng xử lý tối đa trong 10 ngày làm việc. Nếu vụ việc ...
+  Top 3: [Score: 0.060] - ID: seller-meo-cung-cap-bang-chung
+    Snippet:  rõ 6 mặt kiện hàng, quá trình mở hàng, tình trạng thực tế của sản phẩm nhận lại.  ## 3. Các bằng ch...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
+Câu 6 [A/B TEST]: Người bán có bao nhiêu ngày để trả hàng về kho?
+Filter: None
+  Top 1: [Score: 0.166] - ID: buyer-gui-yeu-cau-va-tra-loi
+    Snippet: # Gửi yêu cầu và Trả lời đề xuất hoàn tiền ngay  Nguồn 1: https://help.shopee.vn/portal/4/article/79...
+  Top 2: [Score: 0.129] - ID: seller-giai-quyet-tranh-chap
+    Snippet: # Quy trình giải quyết tranh chấp khiếu nại Người bán  Nguồn: https://banhang.shopee.vn/edu/article/...
+  Top 3: [Score: 0.106] - ID: buyer-quy-dinh-chung-va-han-che
+    Snippet: # Quy định chung và Sản phẩm hạn chế  Nguồn 1: https://help.shopee.vn/portal/4/article/188931 Nguồn ...
+  Agent: Câu trả lời giả lập từ LLM dựa trên ngữ cảnh đã truy xuất.
+
